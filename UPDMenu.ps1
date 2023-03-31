@@ -71,6 +71,7 @@ function Get-CurrentPassword {
     $Cred = New-Object System.Management.Automation.PSCredential ("$object\administrator", $CurrentPasswordSecure)
 
     return $Cred
+    #Return $Cred ellers kan man ikke bruge den i koden
 }
 
 
